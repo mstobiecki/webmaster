@@ -1,3 +1,19 @@
+:root {
+  --main-grey-color: #747474;
+  --main-white-color: #fff;
+}
+
+.header {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 40%;
+}
+
 .navigation {
   display: flex;
   justify-content: center;
@@ -44,5 +60,16 @@
 .navigation__link {
   font-size: 3rem;
   text-decoration: none;
-  color: #747474;
+  color: var(--main-grey-color);
+}
+
+.navigation__button {
+  border: none;
+  background-color: var(--main-white-color);
+  color: var(--main-grey-color);
+}
+
+.navigation__hamburger {
+  width: 3.2rem;
+  height: 3.2rem;
 }
