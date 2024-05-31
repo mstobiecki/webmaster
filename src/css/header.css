@@ -64,9 +64,12 @@
 }
 
 .navigation__button {
+  display: block;
   border: none;
-  background-color: var(--main-white-color);
+  cursor: pointer;
+  background-color: transparent;
   color: var(--main-grey-color);
+  z-index: 200;
 }
 
 .navigation__hamburger {
