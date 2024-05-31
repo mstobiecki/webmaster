@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 56.25%;
+  font-size: 50%;
+  scroll-behavior: smooth;
   background-color: #fff;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 2rem;
+  margin: 0 auto;
 }

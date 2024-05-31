@@ -2,8 +2,15 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/hero.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <script src="./src/js/index.js" defer></script>
     <title>nazwa.pl</title>
@@ -54,5 +61,20 @@
         </button>
       </nav>
     </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Najlepszy hosting na start!</h1>
+          <div class="hero__controls">
+            <input
+              class="hero__input"
+              type="text"
+              placeholder="Wpisz wyszukiwaną frazę..."
+            />
+            <button class="hero__button">Wyszukaj</button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
