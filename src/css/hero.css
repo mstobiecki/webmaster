@@ -3,13 +3,16 @@
   --main-black-color: #000000;
   --main-green-color: #7bd35f;
   --main-orange-color: #ff5200;
+  --hero-height: 60vh;
+  --small-gap: 1rem;
+  --small-padding: 1rem;
 }
 
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: var(--hero-height);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../assets/other/cover.png");
   background-position: 33%;
@@ -18,14 +21,14 @@
 
 .hero__controls {
   display: flex;
-  gap: 1rem;
+  gap: var(--small-gap);
   margin-top: 4rem;
 }
 
 .hero__input {
   position: relative;
   width: 100%;
-  padding: 1rem;
+  padding: var(--small-padding);
   text-align: center;
   border-radius: 0.5rem;
   border: none;
@@ -40,7 +43,7 @@
 }
 
 .hero__button {
-  padding: 1rem;
+  padding: var(--small-padding);
   border: none;
   border-radius: 0.5rem;
   color: var(--main-white-color);
@@ -67,7 +70,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: var(--small-gap);
 }
 
 .hero__subtitle {
@@ -97,7 +100,7 @@
 }
 
 .hero__cart-button {
-  padding: 1rem;
+  padding: var(--small-padding);
   border: none;
   color: var(--main-white-color);
   background-color: var(--main-orange-color);
@@ -107,7 +110,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 1rem;
+  gap: var(--small-gap);
   margin-top: 2rem;
   color: white;
   font-size: 1rem;

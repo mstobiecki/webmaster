@@ -1,6 +1,7 @@
 :root {
   --main-grey-color: #747474;
   --main-white-color: #fff;
+  --medium-gap: 2rem;
 }
 
 .header {
@@ -19,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: var(--medium-gap);
 }
 
 .navigagtion__wrapper {
@@ -52,7 +53,7 @@
 .navigation__list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--medium-gap);
 }
 
 .navigation__item {
