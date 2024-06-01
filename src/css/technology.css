@@ -1,0 +1,54 @@
+:root {
+  --background-color-item: #f1f1f1;
+}
+
+.technologies {
+  padding: 6.8rem 0;
+}
+
+.technologies__heading {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 2rem;
+}
+
+.technologies__heading::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 4px;
+  margin: 1.5rem 15rem;
+  border-radius: 1rem;
+  background-color: var(--main-orange-color);
+}
+
+.technologies__description {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.technologies__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: center;
+  justify-items: center;
+  margin-top: 3rem;
+}
+
+.technologies__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  background-color: var(--background-color-item);
+}
+
+.technologies__image {
+  width: 100%;
+}
+
+.technologies__item--last {
+  grid-column: 1 / 3;
+}
