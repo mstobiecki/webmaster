@@ -9,7 +9,7 @@
   padding-top: 6.8rem;
   background-color: var(--background-color-footer);
   line-height: 1.6;
-  /* clip-path: path("M 0 50 Q 720 120 1440 50 L 1440 300 L 0 300 Z"); */
+  border-radius: 100% 100% 50% 50% / 30% 30% 25% 25%;
 }
 
 .footer__wrapper {

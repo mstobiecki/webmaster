@@ -2,7 +2,7 @@
   --main-white-color: #fff;
   --main-black-color: #000000;
   --main-green-color: #7bd35f;
-  --cta-button-color: #ff5200;
+  --main-orange-color: #ff5200;
 }
 
 .hero {
@@ -44,7 +44,7 @@
   border: none;
   border-radius: 0.5rem;
   color: var(--main-white-color);
-  background-color: var(--cta-button-color);
+  background-color: var(--main-orange-color);
 }
 
 .hero__cart {
@@ -100,7 +100,7 @@
   padding: 1rem;
   border: none;
   color: var(--main-white-color);
-  background-color: var(--cta-button-color);
+  background-color: var(--main-orange-color);
 }
 
 .hero__toggle-price {
@@ -133,7 +133,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--cta-button-color);
+  background-color: var(--main-orange-color);
   transition: 0.4s;
   border-radius: 17px;
 }
