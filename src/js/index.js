@@ -11,6 +11,8 @@ const buttonRightSlider = document.querySelector(
   ".testimonials__button--right"
 );
 
+const footerYear = document.querySelector(".footer__year--js");
+
 const handleNavigation = () => {
   navigationWrapper.classList.toggle("navigation__open--js");
 };
@@ -68,6 +70,14 @@ const slider = () => {
 };
 
 slider();
+
+const getFullYear = () => {
+  const fullYear = new Date().getFullYear();
+
+  footerYear.textContent = fullYear;
+};
+
+getFullYear();
 
 navigationButton.addEventListener("click", handleNavigation);
 priceWithTaxButton.addEventListener("change", handleAddTax);
