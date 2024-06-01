@@ -25,7 +25,7 @@
   position: relative;
   margin: 0 auto;
   max-width: 90rem;
-  height: 23rem;
+  height: 33rem;
   overflow: hidden;
 }
 
@@ -33,7 +33,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 3rem;
+  padding: 3rem 4rem;
   transition: transform 1s;
 }
 
@@ -60,7 +60,7 @@
 
 .testimonials__button {
   position: absolute;
-  top: 50%;
+  top: 30%;
   border: none;
   background-color: transparent;
   font-size: 2.5rem;
