@@ -57,9 +57,15 @@
   .cdn {
     padding: 9.6rem 0;
   }
+
+  .cdn__heading {
+    font-size: 2.5rem;
+  }
+
   .cdn__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
   }
 
   .cdn__button-wrapper {

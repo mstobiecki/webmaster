@@ -34,3 +34,9 @@ body {
   font-weight: 400;
   text-align: center;
 }
+
+@media (min-width: 62em) {
+  html {
+    font-size: 56.25%;
+  }
+}

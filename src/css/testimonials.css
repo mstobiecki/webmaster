@@ -94,6 +94,10 @@
 }
 
 @media (min-width: 48em) {
+  .testimonials__heading {
+    font-size: 2.5rem;
+  }
+
   .testimonials__button--left {
     left: 1%;
   }
