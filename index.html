@@ -96,87 +96,99 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="primary-heading">Najlepszy hosting na start!</h1>
-          <div class="hero__controls">
-            <input
-              class="hero__input"
-              type="text"
-              placeholder="Wpisz frazę..."
-            />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="hero__loupe icon icon-tabler icon-tabler-search"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#2c3e50"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-              <path d="M21 21l-6 -6" />
-            </svg>
-            <button class="hero__button">Wyszukaj</button>
-          </div>
-          <div class="hero__cart">
-            <div class="hero__title-wrapper">
-              <h2 class="second-heading">CloudHosting Start</h2>
-              <p class="hero__subtitle">
-                <span class="hero__price">100</span> pln
+          <div class="hero__wrapper">
+            <div class="hero__controls">
+              <h1 class="hero__heading">Najlepszy hosting na start!</h1>
+              <div class="hero__domain-info">
+                <input
+                  class="hero__input"
+                  type="text"
+                  placeholder="Wpisz wyszukiwaną frazę..."
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hero__loupe icon icon-tabler icon-tabler-search"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#2c3e50"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                  <path d="M21 21l-6 -6" />
+                </svg>
+                <div class="hero__search">
+                  <button class="hero__button">Wyszukaj</button>
+                </div>
+              </div>
+
+              <p class="hero__promotion">
+                Promocja: pl – 5 PLN/rok | eu – 5 PLN/rok | com – 40 PLN/rok
               </p>
             </div>
-            <div class="hero__cart-wrapper">
-              <div class="hero__cart-text">
-                <p>Pojemność</p>
-                <p>Moc obliczeniowa</p>
-                <p>Pamięć RAM</p>
-                <p>CDN nazwa.pl</p>
-                <p>PHP, Node.js</p>
+            <div class="hero__cart-container">
+              <div class="hero__cart">
+                <div class="hero__title-wrapper">
+                  <h2 class="hero__plan">CloudHosting Start</h2>
+                  <p class="hero__subtitle">
+                    <span class="hero__price">100</span> pln
+                  </p>
+                </div>
+                <div class="hero__cart-wrapper">
+                  <div class="hero__cart-text">
+                    <p>Pojemność</p>
+                    <p>Moc obliczeniowa</p>
+                    <p>Pamięć RAM</p>
+                    <p>CDN nazwa.pl</p>
+                    <p>PHP, Node.js</p>
+                  </div>
+                  <div class="hero__cart-text">
+                    <p>100 GB</p>
+                    <p>4vCPU (20 Ghz)</p>
+                    <p>8 GB</p>
+                    <p class="hero__cart-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-check"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 12l5 5l10 -10" />
+                      </svg>
+                    </p>
+                    <p class="hero__cart-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-check"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 12l5 5l10 -10" />
+                      </svg>
+                    </p>
+                  </div>
+                </div>
+                <button class="hero__cart-button">Zamawiam</button>
               </div>
-              <div class="hero__cart-text">
-                <p>100 GB</p>
-                <p>4vCPU (20 Ghz)</p>
-                <p>8 GB</p>
-                <p class="hero__cart-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-check"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M5 12l5 5l10 -10" />
-                  </svg>
-                </p>
-                <p class="hero__cart-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-check"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M5 12l5 5l10 -10" />
-                  </svg>
-                </p>
+              <div class="hero__toggle-price">
+                <p>Netto</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                </label>
+                <p>Brutto</p>
               </div>
             </div>
-            <button class="hero__cart-button">Zamawiam</button>
-          </div>
-          <div class="hero__toggle-price">
-            <p>Netto</p>
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider"></span>
-            </label>
-            <p>Brutto</p>
           </div>
         </div>
       </section>

@@ -3,7 +3,7 @@
   --main-black-color: #000000;
   --main-green-color: #7bd35f;
   --main-orange-color: #ff5200;
-  --hero-height: 60vh;
+  --hero-height: 80vh;
   --small-gap: 1rem;
   --small-padding: 1rem;
 }
@@ -19,17 +19,34 @@
   background-size: cover;
 }
 
+.hero__heading {
+  margin-bottom: 4rem;
+  font-size: 3.5rem;
+  line-height: 1.6;
+  font-weight: 700;
+  text-align: center;
+  color: var(--main-white-color);
+}
+
 .hero__controls {
   display: flex;
+  flex-direction: column;
   gap: var(--small-gap);
   margin-top: 4rem;
+}
+
+.hero__domain-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .hero__input {
   position: relative;
   width: 100%;
-  padding: var(--small-padding);
+  padding: 1.5rem 3rem;
   text-align: center;
+  font-size: 1.2rem;
   border-radius: 0.5rem;
   border: none;
 }
@@ -38,12 +55,18 @@
   position: absolute;
   width: 2rem;
   height: 2rem;
-  margin-right: 1rem;
-  transform: translate(50%, 50%);
+  margin: 0 1rem;
+}
+
+.hero__promotion {
+  margin-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: var(--main-white-color);
 }
 
 .hero__button {
-  padding: var(--small-padding);
+  padding: 1.2rem 2.5rem;
   border: none;
   border-radius: 0.5rem;
   color: var(--main-white-color);
@@ -54,11 +77,17 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
   padding: 2rem;
   border-radius: 0.5rem;
   color: var(--main-black-color);
   background-color: var(--main-white-color);
+}
+
+.hero__plan {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .hero__subtitle {
@@ -113,7 +142,7 @@
   gap: var(--small-gap);
   margin-top: 2rem;
   color: white;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .switch {
@@ -159,4 +188,53 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(13px);
+}
+
+@media (min-width: 36em) {
+  .hero__heading {
+    font-size: 4.5rem;
+  }
+  .hero__subtitle {
+    font-size: 2.5rem;
+  }
+
+  .hero__plan {
+    font-size: 3rem;
+  }
+
+  .hero__input {
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+  }
+
+  .hero__button {
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .hero {
+    height: 60vh;
+  }
+  .hero__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    justify-content: space-between;
+  }
+
+  .hero__controls {
+    width: 60%;
+  }
+
+  .hero__domain-info {
+    width: 100%;
+  }
+}
+
+@media (min-width: 75em) {
+  .hero__cart {
+    padding: 5rem 2rem;
+  }
 }
