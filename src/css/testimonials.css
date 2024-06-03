@@ -33,9 +33,9 @@
 
 .testimonials__wrapper {
   position: relative;
+  padding: 20rem 0 12rem;
   margin: 0 auto;
   max-width: 90rem;
-  height: 31rem;
   overflow: hidden;
 }
 
