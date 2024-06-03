@@ -3,7 +3,7 @@
 }
 
 .testimonials {
-  padding: 6.8rem 0;
+  padding-top: 6.8rem;
 }
 
 .testimonials__heading {
@@ -16,7 +16,7 @@
   display: block;
   width: 5rem;
   height: 4px;
-  margin: 1.5rem 15rem;
+  margin: 1.5rem auto 4rem;
   border-radius: 1rem;
   background-color: var(--main-orange-color);
 }
@@ -35,7 +35,7 @@
   position: relative;
   margin: 0 auto;
   max-width: 90rem;
-  height: 33rem;
+  height: 31rem;
   overflow: hidden;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .testimonials__description {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 .testimonials__footer {
@@ -91,4 +91,14 @@
 .testimonials__button--right {
   right: 4%;
   transform: translate(50%, -50%);
+}
+
+@media (min-width: 48em) {
+  .testimonials__button--left {
+    left: 1%;
+  }
+
+  .testimonials__button--right {
+    right: 1%;
+  }
 }
