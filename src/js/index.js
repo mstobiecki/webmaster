@@ -1,5 +1,6 @@
-const navigationWrapper = document.querySelector(".navigagtion__wrapper");
-const navigationButton = document.querySelector(".navigation__button");
+import modal from "./components/modal.js";
+import openNavigation from "./components/openNavigation.js";
+
 const heroPriceHosting = document.querySelector(".hero__price");
 const priceWithTaxButton = document.querySelector(
   ".hero__toggle-price .switch"
@@ -12,15 +13,6 @@ const buttonRightSlider = document.querySelector(
 );
 
 const footerYear = document.querySelector(".footer__year--js");
-
-const dialog = document.querySelector("dialog");
-const showButtonModal = document.querySelector(".hero__cart-button--js");
-const closeButtonModal = document.querySelectorAll(".modal__button--js");
-const closeIconModal = document.querySelector(".modal__icon--js");
-
-const handleNavigation = () => {
-  navigationWrapper.classList.toggle("navigation__open--js");
-};
 
 const handleAddTax = () => {
   const handleAddVAT = (rate, value) => value + value * rate;
@@ -84,26 +76,11 @@ const getFullYear = () => {
 
 getFullYear();
 
-const backdropModal = document.querySelector("::backdrop");
-
-navigationButton.addEventListener("click", handleNavigation);
 priceWithTaxButton.addEventListener("change", handleAddTax);
-showButtonModal.addEventListener("click", () => {
-  dialog.showModal();
-});
 
-closeButtonModal.forEach((button) =>
-  button.addEventListener("click", () => {
-    dialog.close();
-  })
-);
-
-const closeDialog = (event) => {
-  if (!event.target.contains(dialog)) return;
-  dialog.close();
+const init = () => {
+  modal();
+  openNavigation();
 };
 
-document.addEventListener("click", closeDialog);
-closeIconModal.addEventListener("click", () => {
-  dialog.close();
-});
+init();
