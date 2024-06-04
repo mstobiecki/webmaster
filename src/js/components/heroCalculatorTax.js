@@ -6,10 +6,12 @@ const heroCalculatorTax = () => {
 
   const handleAddTax = () => {
     const handleAddVAT = (rate, value) => value + value * rate;
+
+    const priceWithTax = 123;
     const priceWithoutVAT = +heroPriceHosting.textContent;
     const tax = handleAddVAT(0.23, priceWithoutVAT);
 
-    if (tax === 123) {
+    if (tax === priceWithTax) {
       heroPriceHosting.textContent = tax;
     } else {
       heroPriceHosting.textContent = 100;
