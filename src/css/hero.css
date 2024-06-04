@@ -193,6 +193,7 @@ input:checked + .slider:before {
 @media (min-width: 36em) {
   .hero__heading {
     font-size: 4.5rem;
+    text-align: left;
   }
   .hero__subtitle {
     font-size: 2.5rem;
@@ -234,6 +235,9 @@ input:checked + .slider:before {
 }
 
 @media (min-width: 75em) {
+  .hero {
+    display: block;
+  }
   .hero__cart {
     padding: 5rem 2rem;
   }
