@@ -17,4 +17,5 @@
   text-transform: uppercase;
   background-color: var(--main-orange-color);
   color: var(--main-white-color);
+  cursor: pointer;
 }

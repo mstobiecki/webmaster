@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/css/helpers.css" />
+    <link rel="stylesheet" href="./src/css/modal.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
     <link rel="stylesheet" href="./src/css/hero.css" />
     <link rel="stylesheet" href="./src/css/cdn.css" />
@@ -179,7 +180,9 @@
                     </p>
                   </div>
                 </div>
-                <button class="hero__cart-button">Zamawiam</button>
+                <button class="hero__cart-button hero__cart-button--js">
+                  Zamawiam
+                </button>
               </div>
               <div class="hero__toggle-price">
                 <p>Netto</p>
@@ -508,5 +511,40 @@
         </div>
       </div>
     </footer>
+    <dialog class="modal">
+      <div class="modal__container">
+        <h4 class="modal__heading">
+          Kupujesz na firmę czy jako osoba prywatna?
+        </h4>
+        <p class="modal__description">
+          Potrzebujemy tej informacji, żeby wyświetlić odpowiednie ceny w Twoim
+          koszyku.
+        </p>
+        <div class="modal__controls">
+          <button class="button-orange modal__button--js" autofocus>
+            Firma
+          </button>
+          <button class="button-orange modal__button--js" autofocus>
+            Osoba prywatna
+          </button>
+        </div>
+        <button class="modal__icon modal__icon--js">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-x"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M18 6l-12 12" />
+            <path d="M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </dialog>
   </body>
 </html>

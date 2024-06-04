@@ -1,0 +1,57 @@
+:root {
+  --main-grey-color: #747474;
+}
+
+::backdrop {
+  background-color: var(--main-grey-color);
+  opacity: 0.75;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  z-index: 300;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 4rem;
+  z-index: 302;
+}
+
+.modal__heading {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+}
+
+.modal__description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.modal__controls {
+  display: flex;
+  gap: 4rem;
+}
+
+.modal__button {
+  border: none;
+}
+
+.modal__icon {
+  position: absolute;
+  right: 1%;
+  top: 2%;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
