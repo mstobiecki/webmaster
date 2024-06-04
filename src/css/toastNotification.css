@@ -1,0 +1,31 @@
+.toast {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  width: 20rem;
+  height: 5rem;
+  background-color: #77d050;
+  z-index: 200;
+  padding: 1rem;
+  animation: toastAnimate 2s;
+}
+
+.toast__description {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+.toast__hidden {
+  display: none;
+}
+
+@keyframes toastAnimate {
+  from {
+    transform: translateX(120%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

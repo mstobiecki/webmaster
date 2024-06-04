@@ -1,3 +1,5 @@
+import toastNotification from "./toastNotification.js";
+
 const modal = () => {
   const dialog = document.querySelector("dialog");
   const showButtonModal = document.querySelector(".hero__cart-button--js");
@@ -10,6 +12,7 @@ const modal = () => {
 
   const closeModal = () => {
     dialog.close();
+    toastNotification();
   };
 
   showButtonModal.addEventListener("click", openModal);
