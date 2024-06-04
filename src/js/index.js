@@ -1,30 +1,13 @@
 import modal from "./components/modal.js";
 import openNavigation from "./components/openNavigation.js";
-
-const heroPriceHosting = document.querySelector(".hero__price");
-const priceWithTaxButton = document.querySelector(
-  ".hero__toggle-price .switch"
-);
+import heroCalculatorTax from "./components/heroCalculatorTax.js";
+import actuallYearFooter from "./components/actuallYearFooter.js";
 
 const slides = document.querySelectorAll(".testimonials__item");
 const buttonLeftSlider = document.querySelector(".testimonials__button--left");
 const buttonRightSlider = document.querySelector(
   ".testimonials__button--right"
 );
-
-const footerYear = document.querySelector(".footer__year--js");
-
-const handleAddTax = () => {
-  const handleAddVAT = (rate, value) => value + value * rate;
-  const priceWithoutVAT = +heroPriceHosting.textContent;
-  const tax = handleAddVAT(0.23, priceWithoutVAT);
-
-  if (tax === 123) {
-    heroPriceHosting.textContent = tax;
-  } else {
-    heroPriceHosting.textContent = 100;
-  }
-};
 
 const slider = () => {
   const slidesLength = slides.length - 1;
@@ -68,19 +51,11 @@ const slider = () => {
 
 slider();
 
-const getFullYear = () => {
-  const fullYear = new Date().getFullYear();
-
-  footerYear.textContent = fullYear;
-};
-
-getFullYear();
-
-priceWithTaxButton.addEventListener("change", handleAddTax);
-
 const init = () => {
   modal();
   openNavigation();
+  heroCalculatorTax();
+  actuallYearFooter();
 };
 
 init();
