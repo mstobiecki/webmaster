@@ -6,18 +6,36 @@ const slider = () => {
   const buttonRightSlider = document.querySelector(
     ".testimonials__button--right--js"
   );
+  const dotsSlider = document.querySelector(".testimonials__dots--js");
 
   const activateSlider = () => {
     const slidesLength = slides.length - 1;
     let currentSlide = 0;
 
-    const activateSlide = function (s) {
+    const createDots = () => {
+      slides.forEach((_, i) => {
+        dotsSlider.insertAdjacentHTML(
+          "beforeend",
+          `<button aria-hidden="true" class="testimonials__dot" data-slide="${i}"></button>`
+        );
+      });
+    };
+
+    const activateDot = (slide) => {
+      document
+        .querySelectorAll(".testimonials__dot")
+        .forEach((dot) => dot.classList.remove("testimonials__dot--active"));
+
+      document
+        .querySelector(`.testimonials__dot[data-slide="${slide}"]`)
+        .classList.add("testimonials__dot--active");
+    };
+
+    const activateSlide = (s) => {
       slides.forEach(
         (slide, i) => (slide.style.transform = `translateX(${100 * (i - s)}%)`)
       );
     };
-
-    activateSlide(0);
 
     const nextSlide = () => {
       if (currentSlide === slidesLength) {
@@ -27,6 +45,7 @@ const slider = () => {
       }
 
       activateSlide(currentSlide);
+      activateDot(currentSlide);
     };
 
     const previousSlide = () => {
@@ -37,7 +56,15 @@ const slider = () => {
       }
 
       activateSlide(currentSlide);
+      activateDot(currentSlide);
     };
+
+    const init = () => {
+      activateSlide(0);
+      createDots();
+      activateDot(0);
+    };
+    init();
 
     buttonRightSlider.addEventListener("click", nextSlide);
     buttonLeftSlider.addEventListener("click", previousSlide);

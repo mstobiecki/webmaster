@@ -12,14 +12,12 @@ const modal = () => {
 
   const closeModal = () => {
     dialog.close();
-    toastNotification();
   };
 
-  showButtonModal.addEventListener("click", openModal);
-
-  closeButtonModal.forEach((button) =>
-    button.addEventListener("click", closeModal)
-  );
+  const closeModalWithToast = () => {
+    dialog.close();
+    toastNotification();
+  };
 
   const closeDialog = (event) => {
     if (!event.target.contains(dialog)) {
@@ -28,6 +26,10 @@ const modal = () => {
     closeModal();
   };
 
+  showButtonModal.addEventListener("click", openModal);
+  closeButtonModal.forEach((button) =>
+    button.addEventListener("click", closeModalWithToast)
+  );
   document.addEventListener("click", closeDialog);
   closeIconModal.addEventListener("click", closeModal);
 };
