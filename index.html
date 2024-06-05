@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./src/css/helpers.css" />
     <link rel="stylesheet" href="./src/css/modal.css" />
+    <link rel="stylesheet" href="./src/css/toastNotification.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
     <link rel="stylesheet" href="./src/css/hero.css" />
     <link rel="stylesheet" href="./src/css/cdn.css" />
@@ -18,7 +19,6 @@
     <link rel="stylesheet" href="./src/css/technology.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
-    <script type="module" src="./src/js/index.js" defer></script>
     <title>nazwa.pl</title>
   </head>
   <body>
@@ -76,8 +76,12 @@
             </div>
           </ul>
         </div>
-        <button class="navigation__button navigation__button--js">
+        <button
+          aria-label="Nawigacja"
+          class="navigation__button navigation__button--js"
+        >
           <svg
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-menu-2 navigation__hamburger"
             viewBox="0 0 24 24"
@@ -96,7 +100,11 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section
+        id="hero"
+        aria-label="oferta hostingu i promocji domen"
+        class="hero"
+      >
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__controls">
@@ -108,6 +116,7 @@
                   placeholder="Wpisz wyszukiwaną frazę..."
                 />
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   class="hero__loupe icon icon-tabler icon-tabler-search"
                   viewBox="0 0 24 24"
@@ -122,7 +131,7 @@
                   <path d="M21 21l-6 -6" />
                 </svg>
                 <div class="hero__search">
-                  <button class="hero__button">Wyszukaj</button>
+                  <button class="button-orange">Wyszukaj</button>
                 </div>
               </div>
 
@@ -180,7 +189,7 @@
                     </p>
                   </div>
                 </div>
-                <button class="hero__cart-button hero__cart-button--js">
+                <button class="button-orange hero__cart-button--js">
                   Zamawiam
                 </button>
               </div>
@@ -196,7 +205,11 @@
           </div>
         </div>
       </section>
-      <section class="cdn">
+      <section
+        id="oferta-cdn"
+        aria-label="oferta hostingu w chmurze wraz z cdn"
+        class="cdn"
+      >
         <div class="container">
           <div class="cdn__wrapper">
             <div class="cdn__image-wrapper">
@@ -229,12 +242,18 @@
               </p>
             </div>
             <div class="cdn__button-wrapper">
-              <button class="cdn__button">Zamów</button>
+              <a href="#hero">
+                <button class="button-orange">Zamów</button>
+              </a>
             </div>
           </div>
         </div>
       </section>
-      <section class="testimonials">
+      <section
+        id="opinie"
+        aria-label="opinie klientów nazwa.pl"
+        class="testimonials"
+      >
         <div class="container">
           <h3 class="testimonials__heading">Opinie naszych Klientów</h3>
           <div class="testimonials__image-container">
@@ -297,6 +316,7 @@
               class="testimonials__button testimonials__button--left testimonials__button--left--js"
             >
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 class="testimonials__icon icon icon-tabler icon-tabler-chevron-left"
                 width="44"
@@ -317,6 +337,7 @@
               class="testimonials__button testimonials__button--right testimonials__button--right--js"
             >
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 class="testimonials__icon icon icon-tabler icon-tabler-chevron-right"
                 width="44"
@@ -332,10 +353,15 @@
                 <path d="M9 6l6 6l-6 6" />
               </svg>
             </button>
+            <div class="testimonials__dots testimonials__dots--js"></div>
           </div>
         </div>
       </section>
-      <section class="technologies">
+      <section
+        id="technologie"
+        aria-label="technologie na serwerach nazwa.pl"
+        class="technologies"
+      >
         <div class="container">
           <h3 class="technologies__heading">
             Wybieraj spośród najnowszych technologii
@@ -472,7 +498,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="stopka" aria-label="stopka" class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <h4 class="footer__heading">
@@ -484,7 +510,7 @@
           </p>
         </div>
         <div class="footer__control">
-          <button class="footer__button">
+          <button class="button-orange">
             <a class="footer__mail" href="mailto:kontakt@nazwa.pl"
               >Skontaktuj się z nami</a
             >
@@ -500,18 +526,30 @@
         </div>
         <div class="footer__socials">
           <a href="https://www.facebook.com/nazwapl/">
-            <img class="footer__image" src="./src/assets/icons/footer/fb.png" />
+            <img
+              class="footer__image"
+              src="./src/assets/icons/footer/fb.png"
+              alt="ikona Facebooka"
+            />
           </a>
           <a href="https://www.instagram.com/nazwapl/">
-            <img class="footer__image" src="./src/assets/icons/footer/ig.png" />
+            <img
+              class="footer__image"
+              src="./src/assets/icons/footer/ig.png"
+              alt="ikona Instagrama"
+            />
           </a>
           <a href="https://pl.linkedin.com/company/nazwapl">
-            <img class="footer__image" src="./src/assets/icons/footer/in.png" />
+            <img
+              class="footer__image"
+              src="./src/assets/icons/footer/in.png"
+              alt="ikona Linkedina"
+            />
           </a>
         </div>
       </div>
     </footer>
-    <dialog class="modal">
+    <dialog aria-hidden="true" class="modal">
       <div class="modal__container">
         <h4 class="modal__heading">
           Kupujesz na firmę czy jako osoba prywatna?
@@ -528,8 +566,9 @@
             Osoba prywatna
           </button>
         </div>
-        <button class="modal__icon modal__icon--js">
+        <button aria-label="Zamknij modal" class="modal__icon modal__icon--js">
           <svg
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-x"
             viewBox="0 0 24 24"
@@ -546,5 +585,11 @@
         </button>
       </div>
     </dialog>
+    <div aria-hidden="true" class="toast toast__hidden toast__hidden--js">
+      <div class="toast__container">
+        <p class="toast__description">Usługa została dodana do koszyka.</p>
+      </div>
+    </div>
+    <script type="module" src="./src/js/index.js"></script>
   </body>
 </html>
