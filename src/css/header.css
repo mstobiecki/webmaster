@@ -64,7 +64,7 @@
 .navigation__links {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--medium-gap);
 }
 
 .navigation__link {

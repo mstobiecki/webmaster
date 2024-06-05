@@ -1,10 +1,15 @@
+:root {
+  --main-white-color: #fff;
+  --main-green-color: #77d050;
+}
+
 .toast {
   position: fixed;
   top: 10%;
   right: 0;
   width: 20rem;
   height: 5rem;
-  background-color: #77d050;
+  background-color: var(--main-green-color);
   z-index: 200;
   padding: 1rem;
   animation: toastAnimate 2s;
@@ -13,7 +18,7 @@
 .toast__description {
   font-size: 1.6rem;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--main-white-color);
   text-align: center;
 }
 

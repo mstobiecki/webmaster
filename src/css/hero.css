@@ -5,7 +5,9 @@
   --main-orange-color: #ff5200;
   --hero-height: 80vh;
   --small-gap: 1rem;
+  --medium-gap: 2rem;
   --small-padding: 1rem;
+  --medium-margin: 2rem;
 }
 
 .hero {
@@ -40,7 +42,7 @@
 .hero__domain-info {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: var(--medium-gap);
 }
 
 .hero__input {
@@ -78,7 +80,7 @@
 .hero__cart {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--medium-gap);
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 0.5rem;
@@ -142,7 +144,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: var(--small-gap);
-  margin-top: 2rem;
+  margin-top: var(--medium-margin);
   color: white;
   font-size: 1.6rem;
 }
